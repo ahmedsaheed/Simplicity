@@ -1,12 +1,17 @@
 import '../styles/style.css'
-import Theme from "../components/theme"
+import '../styles/external.css'
+
+import Nav from "../components/nav"
 
 function MyApp({ Component, pageProps }) {
   
   return (
     <>
+       <a className="zero">
+                <Nav />
+            </a>
     <Component {...pageProps} />
-    <Theme/>
+
     </>
   )
 }
