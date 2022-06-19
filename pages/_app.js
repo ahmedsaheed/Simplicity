@@ -7,9 +7,9 @@ function MyApp({ Component, pageProps }) {
   
   return (
     <>
-       <a className="zero">
+      
                 <Nav />
-            </a>
+            
     <Component {...pageProps} />
 
     </>
