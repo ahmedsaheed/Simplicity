@@ -28,7 +28,7 @@ export default function Writing({ blog }: { blog: Blog[] }) {
                 <b>3 min read</b>
                 &nbsp;
                 <Link href="/blog/[slug]" as={`/blog/${post.slug}`} passHref>
-                <a className="read">Read More</a>
+                <a className="hover-underline-animation read">Read More</a>
                 </Link>
               </div>
               <hr className="ruler" />

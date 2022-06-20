@@ -3,12 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Joan&family=Stylish&display=swap');
 :root{
   --bg:#fff;
-  --text-color: ##333333;
+  --text-color: #333;
 }
 
 .light{
   --bg:#fff;
-  --text-color: #333333;
+  --text-color: #333;
 }
 
 .dark{
@@ -47,11 +47,9 @@
 
 html,
 body {
-  width: 100%;
-  height: 100%;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
-  overflow:hidden;
   display:block;
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -180,3 +178,42 @@ h3 {
   margin-inline-end: 0px;
   font-weight: bold;
 }
+
+.link {
+  border: 2px dashed var(--border-color);
+  padding: 7px;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.post-title {
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.4em;
+  padding: 2em 0;
+  font-family: Stylish;
+
+}
+.post-title h1 p{
+  color: (--text-color);
+}
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+
+.post-date{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.post-content {
+  font-size: 20px;
+}
+
