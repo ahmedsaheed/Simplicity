@@ -59,7 +59,7 @@ body {
   border: 5px solid #fecd43;
   background-color: var(--bg); 
   line-height: 24px;
-  transition: background .3s;
+  transition: background-color .3s;
   color: var(--text-color);
 }
 main{
@@ -129,6 +129,7 @@ nav li a:hover{
   color:#fecd43;
 }
 
+
 .hover-underline-animation {
   display: inline-block;
   position: relative;
@@ -151,6 +152,10 @@ nav li a:hover{
 .hover-underline-animation:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
- 
-
 }
+.footer {
+  padding-top: 5.5em;
+  text-align: center;
+  font-size: 1em;
+  font-family: "Stylish";}
+
