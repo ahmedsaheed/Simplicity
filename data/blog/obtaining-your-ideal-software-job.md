@@ -1,8 +1,8 @@
 ---
 title: "Obtaining Your Ideal Software Job"
-description: "My process resources and tips I use when job hunting."
+description: "Markdown post content stress test. See how your post content is being styled with Tailwind CSS."
 date: "2021-12-24T00:00:00"
-tags: ["Job Hunt", "Software Engineering"]
+tags: ["Job Hunt, ", "Software Engineering"]
 ---
 
 Finding a job is stressful for everybody. The standard tech interview doesn't help, does it? I've sent out a few emails over the past few years detailing my approach to the job search as well as some resources I use. I decided to write about it here so I can share it easier.
