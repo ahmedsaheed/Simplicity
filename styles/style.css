@@ -223,8 +223,14 @@ h1 {
   text-decoration: none;
   border: 2px dashed #fecd43;
 }
-
+.read:hover{
+  border-style: solid;
+}
 blockquote {
   border-left: 4px solid var(--text-color);
   padding-left: 1em;
+}
+.prose pre code{
+  border-radius: 7px;
+    padding: 0;
 }
