@@ -234,3 +234,9 @@ blockquote {
   border-radius: 7px;
     padding: 0;
 }
+
+code{
+  background-color: rgba(158,167,179,0.4);
+  border-radius: 6px;
+  padding: 0.2em 0.4em;
+}
