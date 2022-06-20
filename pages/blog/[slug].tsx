@@ -12,7 +12,7 @@ export default function BlogPage({ writing }: { writing: Blog }) {
     return (
         <Layout>
             <br/>
-            <a href="/" className=" hover-underline-animation link active"> ← Go Back</a>
+            <a href="/" className="read hover-underline-animation link active"> ← Go Back</a>
     <div className="post-title">
     <h1>{writing.title}</h1>
     <p className="post-date">
