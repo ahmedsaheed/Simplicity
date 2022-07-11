@@ -12,7 +12,7 @@
     "date-fns": "^2.28.0",
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.5.1",
-    "next": "12.1.6",
+    "next": "^12.1.6",
     "path": "^0.12.7",
     "plaiceholder": "^2.4.0",
     "react": "18.2.0",
