@@ -1,6 +1,5 @@
 import { GetStaticProps, GetStaticPaths } from 'next'
 import { format } from 'date-fns'
-import Image from 'next/image'
 import {markdownToHtml} from '../../lib/markdownToHtml'
 import Layout from '../../components/layout'
 import { Blog,getContentBySlug, getAllContent } from '../../lib/api'

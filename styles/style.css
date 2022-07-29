@@ -7,12 +7,12 @@
   --text-color: #333;
 }
 
-.light{
+[data-theme="light"] {
   --bg:#fff;
   --text-color: #333;
 }
 
-.dark{
+[data-theme="dark"] {
   --bg:#000;
   --text-color: #fff;
 }
