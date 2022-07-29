@@ -5,6 +5,7 @@ import {markdownToHtml} from '../../lib/markdownToHtml'
 import Layout from '../../components/layout'
 import { Blog,getContentBySlug, getAllContent } from '../../lib/api'
 import { getPlaiceholder } from 'plaiceholder'
+import Link from 'next/link'
 const readingTime = require("reading-time")
 
 
@@ -12,7 +13,7 @@ export default function BlogPage({ writing }: { writing: Blog }) {
     return (
         <Layout>
             <br/>
-            <a href="/" className="read hover-underline-animation link active"> ← Go Back</a>
+            <Link href="/" className="read hover-underline-animation link active"> ← Go Back</Link>
     <div className="post-title">
     <h1>{writing.title}</h1>
     <p className="post-date">
