@@ -7,11 +7,11 @@ import { format } from 'date-fns'
 import Link from 'next/link'
 
 
-export default function Writing({ blog }: { blog: Blog[] }) {
+
+function Writing({ blog }: { blog: Blog[] }) {
   return (
   
     <>
-    <Layout>
           <header className="thisheader">
               <h1>Simplicity Blog</h1>
               <h2>A simple template for creating personal websites.</h2>
@@ -38,13 +38,14 @@ export default function Writing({ blog }: { blog: Blog[] }) {
 
         
             </BlogComponent>
-          </Layout>
           
       
       </> 
 
   )
 }
+
+export default Layout(Writing);
 
 export const getStaticProps: GetStaticProps = async () => {
   const blog = getAllContent('blog', ['title', 'date', 'slug', 'description','tags'])
