@@ -2,9 +2,9 @@ import Nav from "./nav"
 import Footer from "./footer"
 import Head from 'next/head'
 
-
-export default function  Layout({ children }) {
-    return (
+export default function Layout(PageComponent: any) {
+  const PageComponentWithLayout = ({ ...pageProps }) => {
+      return (
         <>
         <Head>
         <title>Create Next App</title>
@@ -14,10 +14,11 @@ export default function  Layout({ children }) {
       <Nav/>
       <main className="layout">
 
-        {children}
+      <PageComponent {...pageProps} />
 
         <Footer/>
         </main>
         </>
     )
+}
 }

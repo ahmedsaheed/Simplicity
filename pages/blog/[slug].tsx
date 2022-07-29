@@ -8,9 +8,9 @@ import Link from 'next/link'
 const readingTime = require("reading-time")
 
 
-export default function BlogPage({ writing }: { writing: Blog }) {
+function BlogPage({ writing }: { writing: Blog }) {
     return (
-        <Layout>
+      <>
             <br/>
             <Link href="/" className="read hover-underline-animation link active"> ← Go Back</Link>
     <div className="post-title">
@@ -26,9 +26,11 @@ export default function BlogPage({ writing }: { writing: Blog }) {
     <div className="prose mx-auto max-w-3xl space-y-5"  dangerouslySetInnerHTML={{ __html: writing.content }}>
 
     </div>
-        </Layout>
+    </>
     )
 }
+
+export default Layout(BlogPage)
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
     const writing = getContentBySlug('blog', params?.slug as string, [
